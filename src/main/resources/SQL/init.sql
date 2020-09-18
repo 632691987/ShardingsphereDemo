@@ -18,3 +18,9 @@ create table course_2
     user_id bigint(20)  not null,
     cstatus varchar(10) not null
 );
+
+create table t_udic (
+    dictid BIGINT(20) PRIMARY KEY,
+    ustatus VARCHAR(100) NOT NULL,
+    uvalue VARCHAR (100) NOT NULL
+)
