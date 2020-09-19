@@ -11,7 +11,7 @@ https://shardingsphere.apache.org/index_zh.html
 02, docker network create --subnet=172.18.0.0/16 mynetwork
 03, docker run --name mastersql -it -p 3307:3306 --net mynetwork --ip 172.18.0.10 -e MYSQL_ROOT_PASSWORD=1q2w3e4R -d mysql
 04, docker run --name slavesql -it -p 3308:3306 --net mynetwork --ip 172.18.0.12 -e MYSQL_ROOT_PASSWORD=1q2w3e4R -d mysql
-05, 
+05, docker run --name slavesql2 -it -p 3309:3306 --net mynetwork --ip 172.18.0.14 -e MYSQL_ROOT_PASSWORD=1q2w3e4R -d mysql
 06, 
 07, 
 08, 
