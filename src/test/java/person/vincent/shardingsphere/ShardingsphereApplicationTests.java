@@ -90,6 +90,16 @@ class ShardingsphereApplicationTests
         user.setUstatus("status 1");
         userMapper.insert(user);
     }
+
+    @Test
+    public void testSenario5_read_user()
+    {
+        QueryWrapper<User> wrapper = new QueryWrapper<>();
+        wrapper.eq("user_id", 513903162340409344L);
+
+        User user = userMapper.selectOne(wrapper);
+        log.info("course = {}", user);
+    }
     /////////////////////////////////////Here is use shardingsphere.properties//////////////////////////////
 
 }
