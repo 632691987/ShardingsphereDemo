@@ -8,7 +8,7 @@ CREATE TABLE `user_db`.`t_user` (
 );
 
 create table t_udic (
-    dictid BIGINT(20) PRIMARY KEY,
+    dictid BIGINT PRIMARY KEY,
     ustatus VARCHAR(100) NOT NULL,
     uvalue VARCHAR (100) NOT NULL
 )

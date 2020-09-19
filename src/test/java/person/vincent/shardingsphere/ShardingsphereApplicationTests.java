@@ -82,4 +82,14 @@ class ShardingsphereApplicationTests
         log.info("course = {}", course);
     }
 
+    /////////////////////////////////////Here is use shardingsphere.properties//////////////////////////////
+    @Test
+    public void testSenario5_add_user() {
+        User user = new User();
+        user.setUsername("username");
+        user.setUstatus("status 1");
+        userMapper.insert(user);
+    }
+    /////////////////////////////////////Here is use shardingsphere.properties//////////////////////////////
+
 }
